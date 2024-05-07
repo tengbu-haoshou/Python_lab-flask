@@ -1,0 +1,5 @@
+# lab-flask
+
+## License
+
+MIT
