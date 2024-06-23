@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar color="blue" app dark>
       <v-app-bar-title><h3 class="display-1">lab-flask</h3></v-app-bar-title>
-      <v-btn variant="outlined" color="white" @click="logout()" style="text-transform: none">Logout</v-btn>
+      <v-btn id="logout" variant="outlined" color="white" @click="logout()" style="text-transform: none">Logout</v-btn>
     </v-app-bar>
     <v-footer color="blue" app dark>Copyright &copy; Xxxx Co., Ltd.</v-footer>
     <v-main>
@@ -13,8 +13,8 @@
         <v-row no-gutters>
           <v-col cols="auto">
             <v-tabs>
-              <v-tab style="text-transform: none" to="/FlaskHome"><h3 class="display-1">Home</h3></v-tab>
-              <v-tab style="text-transform: none" to="/FlaskSettings"><h3 class="display-1">Settings</h3></v-tab>
+              <v-tab id="home" style="text-transform: none" to="/FlaskHome"><h3 class="display-1">Home</h3></v-tab>
+              <v-tab id="settings" style="text-transform: none" to="/FlaskSettings"><h3 class="display-1">Settings</h3></v-tab>
             </v-tabs>
           </v-col>
         </v-row>

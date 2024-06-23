@@ -66,7 +66,7 @@ function FlaskSettings() {
         <Navbar expand="lg" className="fixed-top navbar navbar-expand-lg px-lg-2 navbar-dark bg-primary">
           <Navbar.Brand><b>lab-flask</b></Navbar.Brand>
           <Navbar.Collapse />
-          <Button variant="light" onClick={logout}>Logout</Button>
+          <Button variant="light" id="logout" onClick={logout}>Logout</Button>
         </Navbar>
       </header>
       <footer className="footer fixed-bottom mt-auto p-lg-2 navbar-dark bg-primary">
@@ -81,10 +81,10 @@ function FlaskSettings() {
             <Col md="auto">
               <Nav variant="tabs" activeKey="FlaskSettings">
                 <Nav.Item>
-                  <Nav.Link eventKey="FlaskHome" onClick={gotoHome}>Home</Nav.Link>
+                  <Nav.Link eventKey="FlaskHome" id="home" onClick={gotoHome}>Home</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="FlaskSettings" onClick={gotoSettings}><h5>Settings</h5></Nav.Link>
+                  <Nav.Link eventKey="FlaskSettings" id="settings" onClick={gotoSettings}><h5>Settings</h5></Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>

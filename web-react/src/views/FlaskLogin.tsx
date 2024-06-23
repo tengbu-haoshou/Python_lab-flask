@@ -83,17 +83,17 @@ function FlaskLogin() {
           </Row>
           <Row noGutters="true">
             <Col xs={12} md={4}>
-              <Form.Control type="text" value={userName} placeholder="User Name" onChange={(e) => setUserName(e.target.value)} />
+              <Form.Control type="text" value={userName} id="userName" placeholder="User Name" onChange={(e) => setUserName(e.target.value)} />
             </Col>
           </Row>
           <Row noGutters="true">
             <Col xs={12} md={4}>
-              <Form.Control type="password" value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+              <Form.Control type="password" value={password} id="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
             </Col>
           </Row>
           <Row noGutters="true">
             <Col md="auto">
-              <Button variant="outline-success" onClick={login}>Login</Button>
+              <Button variant="outline-success" id="login" onClick={login}>Login</Button>
             </Col>
           </Row>
         </Container>

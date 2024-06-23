@@ -15,13 +15,13 @@
         <v-row>
           <v-col cols="4">
             <v-form>
-              <v-text-field autocomplete="off" prepend-icon="mdi-account" clearable label="User Name" v-model="userName" />
-              <v-text-field
+              <v-text-field id="userName" autocomplete="off" prepend-icon="mdi-account" clearable label="User Name" v-model="userName" />
+              <v-text-field id="password"
                 autocomplete="off" prepend-icon="mdi-lock" clearable label="Password" v-model="password"
                 v-bind:type="showPassword ? 'text' : 'password'"
                 v-bind:append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
                 @click:append="showPassword = ! showPassword" />
-              <v-btn  variant="outlined" color="success" @click="login" style="text-transform: none">Login</v-btn>
+              <v-btn id="login" variant="outlined" color="success" @click="login" style="text-transform: none">Login</v-btn>
             </v-form>
           </v-col>
         </v-row>
