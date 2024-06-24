@@ -32,7 +32,7 @@ root.render(
           <Route path="*" element={<h1>Not Found</h1>} /> 
         </Routes>
       </BrowserRouter>
-	  </Provider>
+	</Provider>
   </React.StrictMode>
 );
 
