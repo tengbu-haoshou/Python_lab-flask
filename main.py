@@ -2,7 +2,7 @@
 # Lab Flask
 #
 # Date    : 2024-04-30
-# Auther  : Hirotoshi FUJIBE
+# Author  : Hirotoshi FUJIBE
 # History :
 #
 

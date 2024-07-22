@@ -25,11 +25,11 @@ root.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<FlaskTop />} />    
-          <Route path="/FlaskLogin" element={<FlaskLogin />} />    
-          <Route path="/FlaskHome" element={<FlaskHome />} />    
-          <Route path="/FlaskSettings" element={<FlaskSettings />} />   
-          <Route path="*" element={<h1>Not Found</h1>} /> 
+          <Route path="/" element={<FlaskTop />} />
+          <Route path="/FlaskLogin" element={<FlaskLogin />} />
+          <Route path="/FlaskHome" element={<FlaskHome />} />
+          <Route path="/FlaskSettings" element={<FlaskSettings />} />
+          <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
       </BrowserRouter>
 	</Provider>
