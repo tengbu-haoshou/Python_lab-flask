@@ -87,6 +87,12 @@ def index():
 
 
 #
+@app.errorhandler(404)
+def not_found(e):
+    response = make_response(render_template('index.html'))
+    return response
+
+#
 @app.after_request
 def after_request(response):
     response.headers['Cache-Control'] = 'private, no-store, no-cache, max-age=0, must-revalidate'
