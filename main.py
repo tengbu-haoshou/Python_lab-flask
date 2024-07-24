@@ -86,7 +86,7 @@ def index():
     return response
 
 
-# When Manipulate [Forward] Button, [Rewind] Button, [URL] Textbox at Browser
+# When Manipulate [Rewind] [Forward] [Refresh] Button [URL] Textbox at Browser
 @app.errorhandler(404)
 def not_found(e):
     response = make_response(render_template('index.html'))
